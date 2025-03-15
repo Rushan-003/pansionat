@@ -22,7 +22,7 @@
             <li>Контакты</li>
         </ul>
         <div>
-            <p>Есть номер! Звоните</p>
+            <p class="phone">Есть номер! Звоните</p>
             <a href="">+7 495 797 77 35</a>
         </div>
         <a href="" id="buttom_1">Заказать звонок</a>
@@ -30,12 +30,12 @@
 
     <main>
         <div class="main">
-            <h1>Подмосковная резиденция<br>"ЛЕСНАЯ УСАДЬБА"</h1>
-            <h2>Пансионат для пожилых премиум-класса</h2>
+            <h1>Подмосковная резиденция<br><span class="h1">"ЛЕСНАЯ УСАДЬБА"</span></h1>
+            <h2>Пансионат для пожилых<br> премиум-класса</h2>
             <ul class="main_ul">
-                <li>Для тех, кто любит своих родных и близких</li>
-                <li>Безопасная среда и интересный досуг</li>
-                <li>Долгосрочные и краткосрочные программы пребывания</li>
+                <li>Для тех, кто любит<br> своих родных и близких</li>
+                <li>Безопасная среда<br> и интересный досуг</li>
+                <li>Долгосрочные и краткосрочные<br> программы пребывания</li>
             </ul>            
         </div>
 
@@ -105,34 +105,51 @@
         </div>
     </section>
 
+    <section>
+        <div class="slaider_top">
+            <h3>Вы получите<spa class="bold_text"> незабываемые<br> впечатления в нашей резиденции</span></h3>
+            <button id="button_4">Записаться на экскурсию</button>            
+        </div>
+        <!-- JS -->
+    </section>
+    
     <section class="section_3">
         <h3>Мы предлагаем нашим резидентам<span> безопасную среду, медицинское сопровождение и интересный досуг</span></h3>
         <div class="service">
             <div>
-                <div>
-                    <p class="text">программа</p>
-                    <h5>ЛАЙТ</h5>                
+                <div class="flex_service">
+                    <div>
+                        <p class="text">программа</p>
+                        <h5>ЛАЙТ</h5>
+                        <p class="text">Для активных резидентов</p>                
+                    </div>
+                    <button id="button_2">Забронировать</button>                    
                 </div>
-                <button id="button_2">Забронировать</button>
+                
                 <div>
-                    <p class="text">Для активных резидентов</p>
                     <ul class="ul">
                         <li>Комплексная оценка здоровья, наблюдение, профессиональный уход.</li>
                         <li>Обеспечиваем максимальный уровень качества жизни и активности.</li>
                         <li>Осмотр и наблюдение врачом-терапевтом, психологом, психиатром, неврологом, кардиологом.</li>
                         <li>Помощь в проведении гигиенических процедур, социально-бытовая адаптация, разнообразный досуг.</li>
                     </ul>
-                    <div>
+                    <div class="service_element">
                         <div>
-                            <div>
+                            <div class="catalog">
                                 <h6>Номер “Комфорт”</h6>
-                                <hr>
-                                <p>3 000 ₽/сутки</p>   
+                                <hr class="hr_1">
+                                <p class="price">3 000 <span class="rub">₽</span><span class="day">/сутки</span></p>   
                             </div>
                             <ul class="ul_2">
                                 <li>Двух/трёхместное размещение</li>
                                 <li>5-ти разовое питание</li>
                             </ul>       
+                        </div>
+                        <br>
+                        <div class="catalog">
+                            <h6>Номер “Люкс”</h6>
+                            <hr class="hr_1">
+                            <p class="price">5 000 <span class="rub">₽</span><span class="day">/сутки</span></p>  
                         </div>
 
                     </div>
@@ -144,13 +161,16 @@
         </div>
         <div class="service">
             <div>
-                <div>
-                    <p class="text">программа</p>
-                    <h5>Интенсив</h5>                
+                <div class="flex_service">
+                    <div>
+                        <p class="text">программа</p>
+                        <h5>Интенсив</h5>
+                        <p class="text">Особый уход и медобслуживание</p>                              
+                    </div>
+                    <button id="button_3">Забронировать</button>         
                 </div>
-                <button id="button_3">Забронировать</button>
+
                 <div>
-                    <p class="text">Особый уход и медобслуживание</p>
                     <ul class="ul">
                         <li>Комплексный медицинский уход</li>
                         <li>Осмотр и наблюдение врачом-реабилитологом</li>
@@ -158,11 +178,21 @@
                         <li>Сопровождение специалистами по уходу, социально-бытовая адаптация, разнообразный досуг</li>
                     </ul>
                     <div>
-                        <div></div>
+                        <div class="catalog">
+                            <h6>Номер “Комфорт”</h6>
+                            <hr class="hr_1">
+                            <p class="price">6 000 <span class="rub">₽</span><span class="day">/сутки</span></p> 
+                        </div>
                         <ul class="ul_2">
                             <li>Двух/трёхместное размещение</li>
                             <li>5-ти разовое питание</li>
                         </ul>
+                    </div>
+                    <hr>
+                    <div class="catalog">
+                        <h6>Номер “Люкс”</h6>
+                        <hr class="hr_1">
+                        <p class="price">9 000 <span class="rub">₽</span><span class="day">/сутки</span></p>
                     </div>
                 </div>
             </div>
@@ -176,7 +206,7 @@
                 <div>
                     <img src="picture/big_logo.png" alt="logo_company">
                 </div>
-                <div>
+                <div class="id_company">
                     <p>ООО "ЛЕСНАЯ УСАДЬБА",</p>
                     <p>ИНН 5032365204</p>
                     <p>ОГРН 1235000101071</p>
