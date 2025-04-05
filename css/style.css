@@ -3,13 +3,11 @@
     --second-family: "Mont", sans-serif;
   }
 
+ /* Стилизация элементов */
+
 body {
     /* padding: 0px 88px; */
-
- 
 }
-
-
 
 header {
     font-family: var(--second-family);
@@ -99,6 +97,7 @@ main {
 
     color: white;
     margin: 0px 88px;
+    margin-bottom: 111px;
 }
 
 .main {
@@ -143,6 +142,20 @@ hr {
     margin: 0px 251px;
 }
 
+.section_4 {
+    margin: 0px 251px;
+}
+
+.section_5 {
+    margin: 0px 251px;
+}
+
+.section_6 {
+    margin: 0px 251px;
+    background-image: url(/picture/Map.png);
+    background-size: 100% 100%;
+}
+
 .service {
     border: 1px solid #DEDEDE;
     border-radius: 24px;
@@ -170,6 +183,10 @@ hr {
     font-weight: 300;
     font-size: 19px;
     color: #464646;
+}
+
+.text_main {
+    margin-bottom: 45px;
 }
 
 .ul_2 {
@@ -209,6 +226,41 @@ hr {
 
 .catalog {
     display: flex;
+    justify-content: space-between;
+}
+
+.element_catalog {
+    display: flex;
+}
+
+.control_right {
+    position: relative;
+    bottom: 300px;
+    left: 1382px;
+}
+
+.slider_main {
+    /* display: flex; */
+}
+
+.slider-element-2, .slider-element-3 {
+    display: none;
+}
+
+.control_left {
+    position: relative;
+    top: 276px;
+    right: 34px;
+}
+
+.controller {
+    width: 68px;
+    height: 68px;
+}
+
+.slider-element-1 {
+    display: flex;
+    gap: 0px 24px;
 }
 
 .text_section {
@@ -223,6 +275,8 @@ hr {
     display: flex;
     align-items: center;
     gap: 50px;
+
+    margin: 27px 0px;
 }
 
 .button_footer {
@@ -249,9 +303,34 @@ hr {
     margin-right: 17px;
 }
 
+.map {
+    padding: 39px 0px 39px 39px;
+    /* background-color: white; */
+}
+.element_map {
+    display: flex;
+}
+
+.form {
+
+}
+
+.main_text_section_6 {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 39px;
+    text-align: center;
+    color: #323638;
+}
+
 .navigation_footer {
     display: flex;
     gap: 89px;
+
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 22px;
+    color: #1e1e1e;
 }
 
 .footer {
@@ -269,7 +348,10 @@ hr {
 }
 
 .section_2_main {
-    margin: 0px 251px;
+    padding: 0px 251px;
+    background-image: url(/picture/Plant.png);
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 .section_right {
@@ -308,6 +390,24 @@ hr {
 
 .slaider_top {
     display: flex;
+    justify-content: space-between;
+}
+
+.element_map {
+    border-radius: 24px;
+}
+
+.plus {
+    width: 46px;
+    height: 46px;
+}
+
+.text_section_3 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    color: #5e4520;
 }
 
 .id_company {
@@ -356,3 +456,17 @@ hr {
     background: #437d2b linear-gradient(102deg, rgba(61, 184, 70, 0) 0%, #3db846 56.2%, rgba(61, 184, 70, 0) 100%);
     border: 0px;
 }
+
+
+
+
+#cover-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9000;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0.3;
+  }

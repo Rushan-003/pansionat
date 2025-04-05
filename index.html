@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="app/slider.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,7 +26,7 @@
             <p class="phone">Есть номер! Звоните</p>
             <a href="">+7 495 797 77 35</a>
         </div>
-        <a href="" id="buttom_1">Заказать звонок</a>
+        <button id="buttom_1">Заказать звонок</button>
     </header>
 
     <main>
@@ -45,7 +46,7 @@
         <div class="text_section_1">
             <h3>Мы стремимся создать для вас <span class="bold_text">комфортные условия проживания</span></h3>
             <div class="text_section"> <!--Переименовать класс-->
-                <p>Загородный пансионат предлагает комфортное пространство для пожилых людей и инвалидов для долговременного проживания.</p>
+                <p class="text_main">Загородный пансионат предлагает комфортное пространство для пожилых людей и инвалидов для долговременного проживания.</p>
                 <p>Мы помогаем людям с возрастными особенностями здоровья жить без стресса и боли, сохранять душевное равновесие и теплые отношения с близкими</p>
             </div>  
         </div>
@@ -105,15 +106,53 @@
         </div>
     </section>
 
-    <section>
+    <section class="section_3">
         <div class="slaider_top">
             <h3>Вы получите<spa class="bold_text"> незабываемые<br> впечатления в нашей резиденции</span></h3>
             <button id="button_4">Записаться на экскурсию</button>            
         </div>
+
+        <div class="slider_main">
+            <div class="controller control_left">
+                <img src="/picture/control.png" alt="">
+            </div>
+            <div>
+                <div class="slider-element-1">
+                    <img src="/picture/slider.png" alt="">
+                    <img src="/picture/slider-2.png" alt="">
+                    <img src="/picture/slider-3.png" alt="">
+                </div>
+                <div class="slider-element-2">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                <div class="slider-element-3">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="controller control_right">
+                <img src="/picture/control_2.png" alt="">
+            </div>
+        </div>
+        <p class="text_section_3">Уютные комнаты отдыха</p>
+        <div>
+            <svg width="62" height="8" viewBox="0 0 62 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="4" cy="4" r="4" fill="#71AB28" />
+                <circle cx="24" cy="4" r="4" fill="#B9B9B9" />
+                <circle cx="43" cy="4" r="3" fill="#B9B9B9" />
+                <circle cx="60" cy="4" r="2" fill="#B9B9B9" />
+              </svg>
+        </div>
+        <div class="video">
+
+        </div>
         <!-- JS -->
     </section>
     
-    <section class="section_3">
+    <section class="section_4">
         <h3>Мы предлагаем нашим резидентам<span> безопасную среду, медицинское сопровождение и интересный досуг</span></h3>
         <div class="service">
             <div>
@@ -136,9 +175,12 @@
                     <div class="service_element">
                         <div>
                             <div class="catalog">
-                                <h6>Номер “Комфорт”</h6>
-                                <hr class="hr_1">
-                                <p class="price">3 000 <span class="rub">₽</span><span class="day">/сутки</span></p>   
+                                <div class="element_catalog">
+                                    <h6>Номер “Комфорт”</h6>
+                                    <hr class="hr_1">
+                                    <p class="price">3 000 <span class="rub">₽</span><span class="day">/сутки</span></p>                                     
+                                </div>
+                                <img src="picture/plus.png" alt="" class="plus">
                             </div>
                             <ul class="ul_2">
                                 <li>Двух/трёхместное размещение</li>
@@ -147,9 +189,12 @@
                         </div>
                         <br>
                         <div class="catalog">
-                            <h6>Номер “Люкс”</h6>
-                            <hr class="hr_1">
-                            <p class="price">5 000 <span class="rub">₽</span><span class="day">/сутки</span></p>  
+                            <div class="element_catalog">
+                                <h6>Номер “Люкс”</h6>
+                                <hr class="hr_1">
+                                <p class="price">5 000 <span class="rub">₽</span><span class="day">/сутки</span></p>                                  
+                            </div>
+                            <img src="picture/plus.png" alt="" class="plus">
                         </div>
 
                     </div>
@@ -177,26 +222,81 @@
                         <li>Составление индивидуальной программы реабилитации, курс ЛФК и массажа</li>
                         <li>Сопровождение специалистами по уходу, социально-бытовая адаптация, разнообразный досуг</li>
                     </ul>
-                    <div>
+                    <div class="service_element">
                         <div class="catalog">
-                            <h6>Номер “Комфорт”</h6>
-                            <hr class="hr_1">
-                            <p class="price">6 000 <span class="rub">₽</span><span class="day">/сутки</span></p> 
+                            <div class="element_catalog">
+                                <h6>Номер “Комфорт”</h6>
+                                <hr class="hr_1">
+                                <p class="price">6 000 <span class="rub">₽</span><span class="day">/сутки</span></p>     
+                            </div>
+                            <img src="picture/plus.png" alt="" class="plus">
                         </div>
                         <ul class="ul_2">
                             <li>Двух/трёхместное размещение</li>
                             <li>5-ти разовое питание</li>
                         </ul>
-                    </div>
-                    <hr>
-                    <div class="catalog">
-                        <h6>Номер “Люкс”</h6>
-                        <hr class="hr_1">
-                        <p class="price">9 000 <span class="rub">₽</span><span class="day">/сутки</span></p>
+                        <hr>
+                        <div class="catalog">
+                            <div class="element_catalog">
+                                <h6>Номер “Люкс”</h6>
+                                <hr class="hr_1">
+                                <p class="price">9 000 <span class="rub">₽</span><span class="day">/сутки</span></p>    
+                            </div>
+                            <img src="picture/plus.png" alt="" class="plus">
+                        </div>
                     </div>
                 </div>
             </div>
             <img src="picture/picture_product_2.png" alt="picture_product_2">
+        </div>
+    </section>
+
+    <section class="section_5">
+        <h3>Наши специалисты всегда готовы<span class="bold_text"> помочь<br> и поддержать пожилых людей в любой ситуации</span></h3>
+    </section>
+
+    <section class="section_6">
+        <div>
+            <div class="map">
+                <h3 class="main_text_section_6"><span class="bold_text">Запишитесь на экскурсию</span><br> в нашу резиденцию</h3>
+                <div class="element_map">
+                    <div class="form">
+                        <p>Заполните форму и мы вам перезвоним</p>
+                        <input type="text"><br>
+                        <input type="text"><br>
+                        <button>Записаться на экскурсию</button>
+                        <div>
+                            <input type="checkbox">
+                            <p>Вы соглашаетесь с условиями обработки<br> персональных данных</p>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <p>Или позвоните нам по телефону</p>
+                        <div>
+                            <div>
+                                <img src="/picture/tel.png" alt="">
+                                <p>+7 (495)797-77-35</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Звоните, Пн-Пт с 9:00-18:00</li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div>
+                                <p>Пишите онлайн</p>
+                                <div>
+                                    <img src="/picture/wiber.png" alt="">
+                                    <img src="/picture/telegram.png" alt="">
+                                    <img src="/picture/whatsapp.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+            </div>
         </div>
     </section>
 
